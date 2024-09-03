@@ -1,0 +1,269 @@
+._page_1ulsb_1 {
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-top: 0;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+._view_sf2n5_1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+._view_mgd6s_11  {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 100
+}
+._inner_mgd6s_1 {
+    position: relative;
+    z-index: 110;
+    height: 100vh;
+    padding-bottom: 98px;
+    padding-top: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+}
+._right_mgd6s_131 {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 120;
+}
+._bar_mgd6s_105 {
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    flex-grow: 1;
+    opacity: .5;
+    margin-right: 9px;
+    -webkit-transition: background-color .1s ease;
+    -moz-transition: background-color .1s ease;
+    transition: background-color .1s ease;
+}
+._barCompleted_mgd6s_117 {
+    opacity: 1;
+}
+._bar_mgd6s_105 {
+    height: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    flex-grow: 1;
+    opacity: .5;
+    margin-right: 9px;
+    -webkit-transition: background-color .1s ease;
+    -moz-transition: background-color .1s ease;
+    transition: background-color .1s ease;
+}
+._barCompleted_mgd6s_117 {
+    opacity: 1;
+}
+._bar_mgd6s_105:last-child {
+    margin-right: 0;
+}
+._title_mgd6s_24 {
+    color: white;
+    text-align: center;
+    font-variant-numeric: lining-nums tabular-nums slashed-zero;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 12px;
+}
+._subTitle_mgd6s_34 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 510;
+    margin-top: 20px;
+}
+._valueWrap_mgd6s_42 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    flex-grow: 1;
+}
+
+._barActive_mgd6s_117{
+    background-color: white!important;
+    opacity: 1 !important;
+}
+
+._value_mgd6s_42 {
+
+    color: #fff;
+    font-variant-numeric: lining-nums tabular-nums slashed-zero;
+    font-size: 234px;
+    font-weight: 860;
+    line-height: 234px;
+    text-align: center;
+    position: relative;
+}
+._valueTitle_mgd6s_78 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+._valueSubTitle_mgd6s_86 {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 510;
+}
+._button_mgd6s_141 {
+    z-index: 130;
+}
+._progressBar_mgd6s_93 {
+    height: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    left: 38px;
+    top: 0;
+    right: 38px;
+    z-index: 110;
+}
+._left_mgd6s_121 {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 120;
+}
+._type-white_oar9p_43 {
+    background-color: #fff;
+    color: #000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color ease;
+    -moz-transition: background-color ease;
+    transition: background-color ease;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+._fixedBottom_oar9p_110 {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+._root_oar9p_1 {
+    padding: 0 16px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    min-height: 50px;
+    height: 50px;
+    font-weight: 590;
+    border: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    -webkit-transition: background-color .25s ease, opacity .25s ease, color .15s ease;
+    -moz-transition: background-color .25s ease, opacity .25s ease, color .15s ease;
+    transition: background-color .25s ease, opacity .25s ease, color .15s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color ease;
+    -moz-transition: background-color ease;
+    transition: background-color ease;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    transition-duration: .3s;
+}

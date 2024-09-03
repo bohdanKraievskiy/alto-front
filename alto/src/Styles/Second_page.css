@@ -1,0 +1,161 @@
+._title_jzemx_9 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+}
+._title_elpw_3{
+    font-size: 4vw !important;
+}
+._root_oar9p_1 {
+    padding: 0 16px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    min-height: 50px;
+    height: 50px;
+    font-weight: 590;
+    border: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    -webkit-transition: background-color .25s ease, opacity .25s ease, color .15s ease;
+    -moz-transition: background-color .25s ease, opacity .25s ease, color .15s ease;
+    transition: background-color .25s ease, opacity .25s ease, color .15s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color ease;
+    -moz-transition: background-color ease;
+    transition: background-color ease;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+._fixedBottom_oar9p_110 {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+._page_1ulsb_1 {
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-top: 0;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+._view_jzemx_1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 98px;
+    padding-top: 24px;
+}
+._view_sf2n5_1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+._loaders_jzemx_15 {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    gap: 34px;
+}
+._top_jzemx_39 {
+    margin-bottom: 4px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+}
+._name_jzemx_33 {
+    font-size: 17px;
+    font-weight: 590;
+    line-height: 22px;
+}
+._loaderProgress_jzemx_51._isCompleted_jzemx_26 {
+    width: 100%;
+}
+._checkmark_jzemx_23 {
+    margin-left: auto;
+}
+._loaderProgress_jzemx_51 {
+    background-color: #007aff;
+    width: 0%;
+    height: 8px;
+    -webkit-transition-property: width;
+    -moz-transition-property: width;
+    transition-property: width
+}
+
+._loader_jzemx_15 {
+    height: 8px;
+    background-color: #666;
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+}
+._checkmark_jzemx_23._isCompleted_jzemx_26 path {
+    stroke: #007aff
+}
+._action_jzemx_61 {
+    opacity: 0 !important;
+    -webkit-transition: opacity .5s ease !important;
+    -moz-transition: opacity .5s ease !important;
+    transition: opacity .5s ease !important;
+}
+._action_jzemx_61._isCompleted_jzemx_26 {
+    opacity: 1 !important;
+}
