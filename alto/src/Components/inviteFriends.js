@@ -285,7 +285,7 @@ const InvitePage = ({ telegramId }) => {
                          className={`_balance_eubs4_1 balance-text _exclusive_font `}>
                         <span style={{fontSize: "12vw", color: "white"}}>ALTO</span>
                     </div>
-                    <img style={{width: "21vw"}}
+                    <img style={{width: "26vw",height:"24vw"}}
                          id="home-mascote"
                          src={`${process.env.PUBLIC_URL}/resources_directory/image_2024-09-01_20-57-01.png`}
                          className="_doggy_94k9d_6 _width-82_94k9d_23 _mascote_1vo1r_60 _isRendered_1vo1r_63"

@@ -88,54 +88,21 @@ const HomePage = ({telegramId,username_curently}) => {
                     </div>
                     <div className="_party">
                         <img
-                            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Activity/Party%20Popper.webp"
+                            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Travel%20and%20Places/Rocket.webp"
                             alt="Party Popper" />
                     </div>
                     <div className="_title_1vo1r_5">
                         <div style={{flexDirection: "row "}}
                              className={`_balance_eubs4_1 balance-text _exclusive_font ${animated ? 'balance-animated' : ''}`}>
-                            <span style={{fontSize: "12vw", color: "white"}}>Your daily rewards</span>
+                            <span style={{fontSize: "12vw", color: "white"}}>Levelling up</span>
                         </div>
                     </div>
-                    <div className="_walletConnectHolder_1vo1r_67">
-                        <div className="_walletItem">
-                            <div className="_mascote_94k9d_1 _centered_94k9d_13"
-                                 style={{marginTop: "5%", alignItems: "center"}}>
-                                <img id="home-mascote"
-                                     src={imageSrc}
-                                     className="_doggy_94k9d_6 _width-82_94k9d_23 _mascote_1vo1r_60 _isRendered_1vo1r_63">
 
-                                </img>
-                                <div style={{flexDirection: "row "}}
-                                     className={`_balance_eubs4_1 balance-text _exclusive_font ${animated ? 'balance-animated' : ''}`}>
-                                    <span style={{fontSize: "12vw", color: "white"}}>80</span>
-                                </div>
-                               
-                            </div>
-                            <span>Alto Points</span>
-                        </div>
-                        <div className="_walletItem">
-                            <div className="_mascote_94k9d_1 _centered_94k9d_13"
-                                 style={{marginTop: "5%", alignItems: "center"}}>
-                                <img id="home-mascote"
-                                     src={`${process.env.PUBLIC_URL}/resources_directory/image_2024-09-01_21-21-19.png`}
-                                     className="_doggy_94k9d_6 _width-82_94k9d_23 _mascote_1vo1r_60 _isRendered_1vo1r_63"/>
-                                 
-                                <div style={{flexDirection: "row "}}
-                                     className={`_balance_eubs4_1 balance-text _exclusive_font ${animated ? 'balance-animated' : ''}`}>
-                                    <span style={{fontSize: "12vw", color: "white"}}>8</span>
-                                </div>
-                               
-                            </div>
-                            <span>Game Pass</span>
-                        </div>
-                      
-                    </div>
-                    <span>Come back tomorrow for check-in day 4 Tip: Skipping a day resets your check-in.</span>
+                    <span style={{alignItems:"center",textAlign:"center",fontSize:16,marginTop:"30%"}}>Connect your wallet to access upcoming crypto features. Our team is working hard to bring them to you soon!</span>
                 </div>  
                 <div className="_buttonWrap_1x19s_70" style={{justifyContent:"center",width:"100%"}}>
                         <div className="_root_oar9p_1 _type-yellow_oar9p_43" style={{width:"100%"}}
-                            >Continue
+                            >Connect Wallet
                         </div>
                     </div>
             </div>

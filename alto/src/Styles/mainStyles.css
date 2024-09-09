@@ -21,9 +21,13 @@
     width: 100%
 }
 
+._margin_flexible{
+    margin-top: 35%;
+}
+
 ._exclusive_font{
-    font-family: 'AlphabetSoup', sans-serif;
-    font-weight: 900 !important;
+    font-family: 'Younger Love', sans-serif;
+    font-weight: 100 !important;
 }
 @font-face {
     font-family: 'AlphabetSoup';
@@ -549,6 +553,12 @@
     overflow: hidden
 }
 
+._header_home_menu_icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 ._title_1wi4k_29 {
     font-size: 15px;
     font-weight: 590;
@@ -571,7 +581,12 @@
     flex-direction: row;
     font-weight: 700;
 }
-
+._upper_home_menu_text{
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    left: 20px;
+}
 ._upper_menu_text{
     opacity: 0.6;
     border-radius: 30px;
@@ -632,7 +647,7 @@
 }
 
 ._width-82_94k9d_23 {
-    width: 30vw;
+    width: 40vw;
     height:auto;
     min-height: 84px
 }
@@ -2488,6 +2503,9 @@ button.swiper-pagination-bullet {
 }
 
 @media only screen and (max-height: 805px) {
+    ._margin_flexible{
+        margin-top: 40%;
+    }
     ._game_start87{
         margin-left: 40%;
         margin-top: 5%;
@@ -2511,7 +2529,10 @@ button.swiper-pagination-bullet {
     }
 }
 
-@media only screen and (max-height: 670px) {
+@media only screen and (max-height: 672px) {
+    ._margin_flexible{
+        margin-top: 20%;
+    }
     ._view_zhpdf_1{
         gap: 2vw !important;
     }

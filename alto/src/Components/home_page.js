@@ -80,10 +80,30 @@ const HomePage = ({telegramId,username_curently}) => {
         <div class="_page_1ulsb_1" style={{zIndex: 100000}}>
             <div className="_gameView_1cr97_1" id="game-view">
                 <div className="_view_sf2n5_1 _view_1vo1r_1" style={{opacity: 1}}>
+                    <div className="_header_home_menu_icon">
+                        <svg width="30" height="30" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_50_324)">
+                                <rect x="2.5" y="2.5" width="40" height="40" rx="20" fill="white"/>
+                                <g clip-path="url(#clip1_50_324)">
+                                    <path
+                                        d="M22.5 12.5L25.59 18.76L32.5 19.77L27.5 24.64L28.68 31.52L22.5 28.27L16.32 31.52L17.5 24.64L12.5 19.77L19.41 18.76L22.5 12.5Z"
+                                        stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_50_324">
+                                    <rect x="2.5" y="2.5" width="40" height="40" rx="20" fill="white"/>
+                                </clipPath>
+                                <clipPath id="clip1_50_324">
+                                    <rect width="24" height="24" fill="white" transform="translate(10.5 10.5)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
                     <div className="_title_1vo1r_5">
                         <div style={{flexDirection: "row "}}
                              className={`_balance_eubs4_1 balance-text _exclusive_font ${animated ? 'balance-animated' : ''}`}>
-                            <span style={{fontSize: "12vw", color: "white"}}>ALTO</span>
+                            <span style={{fontSize: "16vw", color: "white", marginTop: "10%"}}>ALTO</span>
                         </div>
                     </div>
                     <div className="_media_iud9y_8 _game_start87">
@@ -94,33 +114,33 @@ const HomePage = ({telegramId,username_curently}) => {
                             alt="Avatar"
                         />
                     </div>
-                    <div className="_title_1vo1r_5">
+                    <div className="_title_1vo1r_5" style={{margin:30}}>
                         <div style={{flexDirection: "row "}}
                              className={`_balance_eubs4_1 balance-text _exclusive_font ${animated ? 'balance-animated' : ''}`}>
-                            <span style={{fontSize: "12vw", color: "white"}}>${user.balance}</span>
+                            <span style={{fontSize: "14vw", color: "white"}}>${user.balance}</span>
                         </div>
                     </div>
                     <div className="_mascote_94k9d_1 _centered_94k9d_13"
-                         style={{marginTop: "5%", alignItems: "center"}}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1906" height="676" viewBox="0 0 1906 676"
-                             fill="none" className="_glass_94k9d_29">
-                            <path
-                                d="M1883.31 89.9479C1883.31 53.1478 1853.48 23.3154 1816.68 23.3154H1201.73C1162.44 23.3154 1127.14 40.388 1102.85 67.4479H824.909C809.553 41.0733 780.975 23.3154 748.209 23.3154H320.821C156.058 23.3154 22.4922 156.881 22.4922 321.644V509.207C22.4922 588.661 86.9024 653.071 166.357 653.071H483.414C678.643 653.071 836.908 494.807 836.908 299.577V200.713H1068.9V354.743C1068.9 519.505 1202.46 653.071 1367.23 653.071H1397.42C1665.77 653.071 1883.31 435.53 1883.31 167.18V89.9479Z"
-                                fill="black" stroke="white" stroke-width="45"></path>
-                        </svg>
+                         style={{marginTop: "-5%", alignItems: "center"}}>
+
                         <img id="home-mascote"
                              src={imageSrc}
                              className="_doggy_94k9d_6 _width-82_94k9d_23 _mascote_1vo1r_60 _isRendered_1vo1r_63">
 
                         </img>
                     </div>
-                    <div style={{flexDirection: "row "}}
-                         className={`_balance_eubs4_1 balance-text _exclusive_font ${animated ? 'balance-animated' : ''}`}>
-                        <span style={{fontSize: "8vw", color: "white"}}>Slot game 🎟️ {user.attempts_left}</span>
+                    <div className="_upper_home_menu_text">
+                        <div style={{flexDirection: "row "}}
+                             className={`_balance_eubs4_1 balance-text _margin_flexible _exclusive_font ${animated ? 'balance-animated' : ''}`}>
+                            <span style={{fontSize: "6vw", color: "white"}}>Slot game 🎟️ {user.attempts_left}</span>
+                        </div>
+                        <div className="_root_oar9p_1 _type-white_oar9p_43" ><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.17676 12.9229C0.908203 12.9229 0.693359 12.8252 0.532227 12.6299C0.375977 12.4395 0.297852 12.1855 0.297852 11.8682V1.57031C0.297852 1.25293 0.375977 0.999023 0.532227 0.808594C0.693359 0.618164 0.908203 0.522949 1.17676 0.522949C1.32324 0.522949 1.4624 0.549805 1.59424 0.603516C1.72607 0.652344 1.86523 0.718262 2.01172 0.80127L10.5518 5.74512C10.8594 5.9209 11.0718 6.07959 11.189 6.22119C11.311 6.35791 11.3721 6.52393 11.3721 6.71924C11.3721 6.91455 11.311 7.08301 11.189 7.22461C11.0718 7.36133 10.8594 7.52002 10.5518 7.70068L2.01172 12.6372C1.86523 12.7251 1.72607 12.7935 1.59424 12.8423C1.4624 12.896 1.32324 12.9229 1.17676 12.9229Z" fill="black"/>
+                        </svg>
+                            Play
+                        </div>
                     </div>
-
                 </div>
-              
 
 
             </div>
