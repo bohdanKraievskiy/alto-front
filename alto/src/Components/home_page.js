@@ -26,21 +26,25 @@ const HomePage = ({telegramId,username_curently}) => {
         window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
         setIsLoading(true);
     };
-    const handleGoToScore = () => {
+    const handleGoToBoosts = () => {
         window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
-        navigate("/last_check");
+        navigate("/boosts");
     };
     const [animated, setAnimated] = useState(false);
     useEffect(() => {
         const loadData = async () => {
             // Check if user data is already fetched
             if (!userFetchedRef.current) {
-                await fetchUser(telegramId);
-                userFetchedRef.current = true;
+                if (!user) {
+                    await fetchUser(telegramId);
+                    userFetchedRef.current = true;
+                } else {
+                    userFetchedRef.current = true;
+                }
             }
 
             // Check if rewards data is already fetched
-            if (!rewardsFetchedRef.current) {
+            if (!rewardsFetchedRef.current ) {
                 if (!rewards || Object.keys(rewards).length === 0) {
                     navigate("/preload");
                 } else {
@@ -80,7 +84,7 @@ const HomePage = ({telegramId,username_curently}) => {
         <div class="_page_1ulsb_1" style={{zIndex: 100000}}>
             <div className="_gameView_1cr97_1" id="game-view">
                 <div className="_view_sf2n5_1 _view_1vo1r_1" style={{opacity: 1}}>
-                    <div className="_header_home_menu_icon">
+                    <div className="_header_home_menu_icon" onClick={handleGoToBoosts}>
                         <svg width="30" height="30" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_50_324)">
                                 <rect x="2.5" y="2.5" width="40" height="40" rx="20" fill="white"/>

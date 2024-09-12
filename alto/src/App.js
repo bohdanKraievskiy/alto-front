@@ -17,6 +17,7 @@ import axios from 'axios';
 import { API_BASE_URL } from './Helpers/api';
 import Tasks from "./Components/Tasks";
 import Wallet from "./Components/Wallet";
+import Boosts from "./Components/Boosters";
 
 export const ModalContext = createContext();
 export const IsRegisteredContext = createContext();
@@ -202,6 +203,7 @@ function App() {
             <Route path="/tasks" element={<Tasks telegramId={userData.id}/>} />
             <Route path="*" element={<Navigate to="/preload" />} />
             <Route path="/wallet" element={<Wallet telegramId={userData.id}/>} />
+            <Route path="/boosts" element={<Boosts />}/>
           </Routes>
           {showBottomNavbar && <BottomNavbar />}
         </div>
