@@ -41,19 +41,7 @@ const LastPage = ({telegramId}) => {
         });
     };
 
-    useEffect(() => {
-        if(state === "initial") {
-            setBackground("75007500")
-        }
-
-        if(state === "amazing") {
-            setBackground("75007501")
-        }
-
-        if(state === "premium") {
-            setBackground("75007502")
-        }
-    },[state])
+    
 
     return (
         <div className="_page_1ulsb_1">
@@ -90,9 +78,9 @@ const LastPage = ({telegramId}) => {
                     ) : state === "amazing" ? (
                         <>
                             <div className="_title_mgd6s_24 _exclusive_font" style={{fontSize:"13vw"}}>YOU’RE AMAZING</div>
-                            <div className="_subTitle_mgd6s_34">Here is your WAP reward</div>
+                            <div className="_subTitle_mgd6s_34">Here is your ALTO reward</div>
                             <div className="_valueWrap_mgd6s_42">
-                                <div className="_value_mgd6s_42">
+                                <div className="_value_mgd6s_42" >
                                     <img
                                         src={`${process.env.PUBLIC_URL}/resources_directory/IMG_2429.webp`}
                                         width="237" height="242"
@@ -103,12 +91,12 @@ const LastPage = ({telegramId}) => {
                                          className={`_balance_eubs4_1 balance-text _exclusive_font `}>
                                         <span style={{fontSize: "12vw", color: "white"}}>{user?.age} </span>
                                         &nbsp;
-                                        <span style={{fontSize: "12vw"}}> WAP</span>
+                                        <span style={{fontSize: "12vw"}}> ALRO</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="_valueSubTitle_mgd6s_86">
-                                Welcome to the PRIME movement 🤝
+                                Welcome to the ALRO movement 🤝
                             </div>
                         </>
                     ) : state === "premium" && user.is_premium ? (

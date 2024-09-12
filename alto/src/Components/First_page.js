@@ -10,14 +10,17 @@ const WelcomePage = () => {
     };
     return (
         <div className="welcome-page">
-            <img
-                src={`${process.env.PUBLIC_URL}/resources_directory/IMG_2429.webp`}
-                alt="Character"
-                className="welcome-image"
-            />
-            <h1 className="welcome-text">👋Hey!</h1>
-            <p className="welcome-subtext">Lets go $PRIME together!</p>
-            <div className="_root_oar9p_1 _type-blue_oar9p_88 _fixedBottom_oar9p_110" onClick={handleButtonClick}>Wow, let's go!</div>
+            <div className="_title_1vo1r_5">
+                <div style={{flexDirection: "row "}}
+                     className={`_balance_eubs4_1 balance-text _exclusive_font `}>
+                    <span style={{fontSize: "20vw", color: "white",marginBottom:'90%'}}>ALTO</span>
+                </div>
+            </div>
+            <h1 className="welcome-text _exclusive_font">👋Hey!</h1>
+            <p className="welcome-subtext _exclusive_font">Lets go ALTO together!</p>
+            <div className="_root_oar9p_1 _type-blue_oar9p_88 _fixedBottom_oar9p_110" onClick={handleButtonClick}>Wow,
+                let's go!
+            </div>
         </div>
     );
 };

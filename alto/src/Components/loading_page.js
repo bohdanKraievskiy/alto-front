@@ -122,16 +122,21 @@ const PreLoad = ({ telegramId }) => {
                 <RewardPage rewardData={rewardData} />
             ) : (
                 <div className="_view_sf2n5_1 _view_1x19s_1" style={{opacity: 1}}>
-                    <div className="_title_1x19s_5">PRIME</div>
-                    <div className="_mascote_94k9d_1 _centered_94k9d_13 _loaded_91hw8">
-                        <img
-                            id="home-mascote"
-                            src={`${process.env.PUBLIC_URL}/resources_directory/IMG_2429.webp`}
-                            className="_doggy_94k9d_6 louve_t09 _width-82_94k9d_23 _mascote_1vo1r_60 _isRendered_1vo1r_63"
-                            alt="Mascote"
-                        />
+                    <div className="_title_1vo1r_5">
+                        <div style={{flexDirection: "row "}}
+                             className={`_balance_eubs4_1 balance-text _exclusive_font `}>
+                            <span style={{fontSize: "20vw", color: "white", marginTop: "10%"}}>ALTO</span>
+                        </div>
                     </div>
-                    <div className="_subtitleEmpty_1x19s_19">Loading...</div>
+
+                    <div className="_subtitleEmpty_1x19s_0" style={{marginTop:400}}>
+                        <div className="lds-ring">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
             )}
         </div>

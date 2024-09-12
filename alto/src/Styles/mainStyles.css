@@ -1369,6 +1369,49 @@ button.swiper-pagination-bullet {
     width: 100%
 }
 
+
+.lds-ring,
+.lds-ring div {
+    box-sizing: border-box;
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid currentColor;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: currentColor transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 ._action_jzemx_61 {
     opacity: 0!important;
     -webkit-transition: opacity .5s ease!important;
@@ -1409,6 +1452,428 @@ button.swiper-pagination-bullet {
     font-size: 22px;
     text-align: center;
     padding-top: 60px
+}
+/* SlotMachine.css */
+.slot-machine-container {
+    position: absolute;
+    margin-left: 35px;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+._value_mgd6s_40{
+
+}
+._value_mgd6s_40 img{
+    height: 100%;
+}
+/*
+* Slot machine design inspired by Flaticon
+* model url: https://www.flaticon.com/free-icon/slot-machine_536079#term=slot%20machine&page=1&position=46
+*/
+
+body {
+    font-family: "Roboto Slab", serif;
+}
+
+.Machine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    flex-direction: column;
+    height: 330px;
+    width: 300px;
+    background-color: #38aa97;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 20vh auto 5vh 50px;
+    position: relative;
+}
+
+.Machine::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 330px;
+    background-color: #42938a;
+    left: -20px;
+    border-top-left-radius: 8px;
+    z-index: -20;
+}
+
+.Machine-bottom {
+    background-color: #e3ed5a;
+    width: 320px;
+    height: 30px;
+    margin: auto;
+    margin-top: -31px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    bottom: -30px;
+    position: absolute;
+    right: -15px;
+}
+
+.Machine-bottom::before {
+    position: absolute;
+    content: "";
+    left: -40px;
+    bottom: 0;
+    background-color: #cddd54;
+    height: 30px;
+    width: 60px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: -10;
+}
+
+.Lights {
+    position: absolute;
+    top: 0;
+}
+
+.Light-bulb {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px 5px;
+    box-shadow: #eaeaea 0px 1px 5px;
+    animation: toYellow 1s infinite;
+}
+.Light-bulb:nth-child(2n) {
+    background-color: #f7b647;
+    box-shadow: #f7b647 0px 1px 5px;
+    animation: toWhite 1s infinite;
+}
+
+.Reels {
+    background-color: #f7b647;
+    width: 290px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.Reels::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 100%;
+    background-color: #f9a02a;
+    left: -20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: -2;
+    margin-top: -20px;
+}
+
+.Reel {
+    display: inline-block;
+    font-size: 28px;
+    background-color: #eaeaea;
+    border: #e3ed5a solid 0.5rem;
+    border-radius: 5px;
+    max-width: 60px;
+    height: 60px;
+    text-align: center;
+    box-shadow: inset #3336 0px 1px 2px 1px;
+    overflow: hidden;
+}
+
+.Reel-plate .span {
+    display: block;
+}
+
+.Reel-plate-1 {
+    animation: slideDown 1s;
+}
+
+.Reel-plate-1.spin {
+    animation: spin 0.2s ease-out 0s 20;
+}
+
+.Reel-plate-2 {
+    animation: slideDown 2s;
+}
+
+.Reel-plate-2.spin {
+    animation: spin 0.2s ease-out 0s 20;
+}
+
+.Reel-plate-3 {
+    animation: slideDown 3s;
+}
+
+.Reel-plate-3.spin {
+    animation: spin 0.2s ease-out 0s 20;
+}
+
+.Slot {
+    position: absolute;
+    bottom: 45px;
+    left: 15px;
+    background-color: #eaf2ff;
+    border-radius: 8px;
+    padding: 15px 13px;
+}
+
+.Slot-inner {
+    background-color: #175dc6;
+    height: 40px;
+    width: 15px;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ea2f12;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 32px;
+    font-family: "Roboto Slab", serif;
+    box-shadow: -5px 1px 0px 1px #af200a, -2px 2px #af200a, -2px 2px #af200a;
+    border: 1px solid #af200a;
+    text-shadow: black 1px 1px 2px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    box-shadow: -2px 1px 0px 1px #af200a, -2px 2px #af200a, -2px 2px #af200a;
+    outline: none;
+}
+
+button:focus {
+    border: 1px solid #af200a;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #d3867b;
+    background-color: #fba092;
+    box-shadow: -2px 1px 0px 1px #d3867b, -2px 2px #d3867b, -2px 2px #d3867b;
+    cursor: not-allowed;
+    outline: none;
+}
+
+.Message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.Alarm-container {
+    position: absolute;
+    top: -45px;
+}
+
+.Alarm {
+    background-color: #f84f35;
+    height: 46px;
+    width: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+.Alarm::before {
+    position: absolute;
+    content: "";
+    height: 46px;
+    width: 35px;
+    bottom: 0;
+    left: -15px;
+    background-color: #ea2f12;
+    border-top-left-radius: 20px;
+    z-index: -5;
+}
+
+.Alarm::after {
+    background-color: #175dc6;
+    height: 20px;
+    width: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 10;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -27px;
+}
+
+.Alarm-bulb {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #f9a02a;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+.Alarm.alert {
+    animation: pulse 1s infinite;
+}
+
+.Alarm.alert .Alarm-bulb {
+    animation: toYellow 1s infinite;
+}
+
+.Message {
+    position: absolute;
+    bottom: -120px;
+    font-size: 26px;
+    opacity: 0;
+    width: 350px;
+}
+
+.Message-visible {
+    opacity: 1;
+    transition: opacity 4s ease-in;
+}
+
+@keyframes toYellow {
+    from {
+        background-color: white;
+        box-shadow: #eaeaea 0px 1px 5px;
+    }
+    to {
+        background-color: #f7b647;
+        box-shadow: #f7b647 0px 1px 5px;
+    }
+}
+
+@keyframes toWhite {
+    from {
+        background-color: #f7b647;
+        box-shadow: #f7b647 0px 1px 5px;
+    }
+    to {
+        background-color: white;
+        box-shadow: #eaeaea 0px 1px 5px;
+    }
+}
+
+@keyframes pulse {
+    from {
+        background-color: #f84f35;
+    }
+    to {
+        background-color: #ea2f12;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        margin-top: -150px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        margin-top: -240px;
+    }
+    30% {
+        margin-top: -200px;
+    }
+    50% {
+        margin-top: -160px;
+    }
+    70% {
+        margin-top: -80px;
+    }
+    90% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -80px;
+    }
+}
+
+@keyframes pulsePrize {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.85);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.slot-machine {
+    align-content: center;
+    width: 110px;
+    position: absolute;
+    top: 270px;
+    height: 90px;
+    left: 33%;
+    background: white;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.reel {
+    font-size: 1rem;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+}
+
+.spinning {
+    animation: spin 0.5s linear infinite;
+}
+
+/* Анімація крутіння */
+@keyframes spin {
+    0% { transform: rotateX(0); }
+    100% { transform: rotateX(360deg); }
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+._subtitleEmpty_1x19s_0{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    right: 0;
 }
 
 ._skeletonWrap_1x19s_25 {

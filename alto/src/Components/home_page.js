@@ -30,6 +30,10 @@ const HomePage = ({telegramId,username_curently}) => {
         window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
         navigate("/boosts");
     };
+    const handleGoToSlotMachine = () => {
+        window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
+        navigate("/game");
+    };
     const [animated, setAnimated] = useState(false);
     useEffect(() => {
         const loadData = async () => {
@@ -138,7 +142,7 @@ const HomePage = ({telegramId,username_curently}) => {
                              className={`_balance_eubs4_1 balance-text _margin_flexible _exclusive_font ${animated ? 'balance-animated' : ''}`}>
                             <span style={{fontSize: "6vw", color: "white"}}>Slot game 🎟️ {user.attempts_left}</span>
                         </div>
-                        <div className="_root_oar9p_1 _type-white_oar9p_43" ><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div className="_root_oar9p_1 _type-white_oar9p_43" onClick={handleGoToSlotMachine}><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.17676 12.9229C0.908203 12.9229 0.693359 12.8252 0.532227 12.6299C0.375977 12.4395 0.297852 12.1855 0.297852 11.8682V1.57031C0.297852 1.25293 0.375977 0.999023 0.532227 0.808594C0.693359 0.618164 0.908203 0.522949 1.17676 0.522949C1.32324 0.522949 1.4624 0.549805 1.59424 0.603516C1.72607 0.652344 1.86523 0.718262 2.01172 0.80127L10.5518 5.74512C10.8594 5.9209 11.0718 6.07959 11.189 6.22119C11.311 6.35791 11.3721 6.52393 11.3721 6.71924C11.3721 6.91455 11.311 7.08301 11.189 7.22461C11.0718 7.36133 10.8594 7.52002 10.5518 7.70068L2.01172 12.6372C1.86523 12.7251 1.72607 12.7935 1.59424 12.8423C1.4624 12.896 1.32324 12.9229 1.17676 12.9229Z" fill="black"/>
                         </svg>
                             Play
