@@ -1486,48 +1486,12 @@ body {
     flex-direction: column;
     height: 330px;
     width: 300px;
-    background-color: #38aa97;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    margin: 20vh auto 5vh 50px;
+    background-color: white;
+    border-radius: 28px;
+    margin-top: 10vh;
+    margin-left: 5vh;
+    margin-right: 5vw;
     position: relative;
-}
-
-.Machine::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 330px;
-    background-color: #42938a;
-    left: -20px;
-    border-top-left-radius: 8px;
-    z-index: -20;
-}
-
-.Machine-bottom {
-    background-color: #e3ed5a;
-    width: 320px;
-    height: 30px;
-    margin: auto;
-    margin-top: -31px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    bottom: -30px;
-    position: absolute;
-    right: -15px;
-}
-
-.Machine-bottom::before {
-    position: absolute;
-    content: "";
-    left: -40px;
-    bottom: 0;
-    background-color: #cddd54;
-    height: 30px;
-    width: 60px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    z-index: -10;
 }
 
 .Lights {
@@ -1552,36 +1516,32 @@ body {
 }
 
 .Reels {
-    background-color: #f7b647;
+    background-color: white;
     width: 290px;
-    padding: 20px 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     position: relative;
 }
 
-.Reels::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 100%;
-    background-color: #f9a02a;
-    left: -20px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    z-index: -2;
-    margin-top: -20px;
+._slot_machine_view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Reel {
     display: inline-block;
     font-size: 28px;
     background-color: #eaeaea;
-    border: #e3ed5a solid 0.5rem;
-    border-radius: 5px;
+    border: 0.2rem solid black;
+    border-radius: 7.5px;
     max-width: 60px;
     height: 60px;
     text-align: center;
-    box-shadow: inset #3336 0px 1px 2px 1px;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
     overflow: hidden;
 }
 
@@ -1590,7 +1550,8 @@ body {
 }
 
 .Reel-plate-1 {
-    animation: slideDown 1s;
+    margin-top: 5px;
+    animation: slideDown 2s;
 }
 
 .Reel-plate-1.spin {
@@ -1598,6 +1559,7 @@ body {
 }
 
 .Reel-plate-2 {
+    margin-top: 5px;
     animation: slideDown 2s;
 }
 
@@ -1606,7 +1568,8 @@ body {
 }
 
 .Reel-plate-3 {
-    animation: slideDown 3s;
+    margin-top: 5px;
+    animation: slideDown 2s;
 }
 
 .Reel-plate-3.spin {
@@ -1800,6 +1763,56 @@ button[disabled] {
     100% {
         margin-top: -80px;
     }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.slotcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.slot {
+    width: 100px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 7.5px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    background: #fafafa;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.4) inset;
+}
+
+.slot .symbols {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 5s;
+}
+
+.slot .symbol {
+    width: 100px;
+    height: 150px;
+    font-size: 60px;
+    line-height: 100px;
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
 }
 
 @keyframes pulsePrize {

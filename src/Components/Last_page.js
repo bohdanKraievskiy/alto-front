@@ -80,18 +80,13 @@ const LastPage = ({telegramId}) => {
                             <div className="_title_mgd6s_24 _exclusive_font" style={{fontSize:"13vw"}}>YOU’RE AMAZING</div>
                             <div className="_subTitle_mgd6s_34">Here is your ALTO reward</div>
                             <div className="_valueWrap_mgd6s_42">
-                                <div className="_value_mgd6s_42" >
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/resources_directory/IMG_2429.webp`}
-                                        width="237" height="242"
-                                    />
-                                </div>
+
                                 <div className="_title_1vo1r_5" style={{marginTop:0}}>
                                     <div style={{flexDirection: "row "}}
                                          className={`_balance_eubs4_1 balance-text _exclusive_font `}>
                                         <span style={{fontSize: "12vw", color: "white"}}>{user?.age} </span>
                                         &nbsp;
-                                        <span style={{fontSize: "12vw"}}> ALRO</span>
+                                        <span style={{fontSize: "12vw"}}> ALTO</span>
                                     </div>
                                 </div>
                             </div>
